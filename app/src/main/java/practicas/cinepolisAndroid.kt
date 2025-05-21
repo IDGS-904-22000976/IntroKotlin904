@@ -27,7 +27,7 @@ class cinepolisAndroid : AppCompatActivity() {
         val btnCalcular = findViewById<Button>(R.id.btnCalcular)
 
         btnCalcular.setOnClickListener {
-            // Validar campos
+
             if (etNombre.text.toString().isEmpty()) {
                 Toast.makeText(this, "Ingrese su nombre", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -49,7 +49,7 @@ class cinepolisAndroid : AppCompatActivity() {
             val tieneTarjeta = rbSi.isChecked
             val precioBoleto = 12000.0
 
-            // Validar cantidad máxima de boletos por persona
+
             if (boletos > 7 * compradores) {
                 Toast.makeText(this, "Máximo 7 boletos por persona", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -73,10 +73,10 @@ class cinepolisAndroid : AppCompatActivity() {
                 total -= descuentoTarjeta
             }
 
-            // Mostrar resultado
+
             tvTotal.text = "$${"%.2f".format(total)}"
 
-            // Mostrar resumen
+
             Toast.makeText(this,
                 "$nombre: ${boletos} boletos, Total: $${"%.2f".format(total)}",
                 Toast.LENGTH_LONG).show()
