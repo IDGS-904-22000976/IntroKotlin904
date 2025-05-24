@@ -6,7 +6,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import tema1A.Ejemplo1Activity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +15,8 @@ class MenuActivity : AppCompatActivity() {
         val btnEjemplo1 = findViewById<Button>(R.id.btn1)
         val btnCinepolis = findViewById<Button>(R.id.btn2)
         val btnEjemplo2 = findViewById<Button>(R.id.btn3)
+        val btnEjemplo3 = findViewById<Button>(R.id.btn4)
+        val btnEjemplo4 = findViewById<Button>(R.id.btn5)
         btnEjemplo1.setOnClickListener {
             navigateToEjemplo1()
         }
@@ -24,6 +25,12 @@ class MenuActivity : AppCompatActivity() {
         }
         btnEjemplo2.setOnClickListener {
         navigateToEjemplo2()
+        }
+        btnEjemplo3.setOnClickListener {
+            navigateToEjemplo3()
+        }
+        btnEjemplo4.setOnClickListener {
+            navigateToEjemplo4()
         }
 
 
@@ -46,4 +53,13 @@ class MenuActivity : AppCompatActivity() {
         val intent = android.content.Intent(this, Tem2App.Ejemplo2Activity::class.java)
         startActivity(intent)
     }
+    private fun navigateToEjemplo3() {
+        val intent = android.content.Intent(this, com.example.introkodlin904.Tema3.Ejemplo3Activity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToEjemplo4() {
+        val intent = android.content.Intent(this, com.example.introkodlin904.Tema4.Ejemplo4Activity::class.java)
+        startActivity(intent)
+    }
+
 }
