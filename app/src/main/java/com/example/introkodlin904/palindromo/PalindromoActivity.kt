@@ -1,4 +1,4 @@
-package com.example.introkodlin904.polindromo
+package com.example.introkodlin904.palindromo
 
 import android.os.Bundle
 import android.widget.Button
