@@ -1,7 +1,7 @@
 package temasKotlin
 
 fun main(){
-    // variables solo lectura val
+    // variables solo lectura val 
     // variables mutables var
 
     val a=1
